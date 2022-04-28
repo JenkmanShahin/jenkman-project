@@ -9,9 +9,16 @@ function aufgabe1() {
   console.debug("Aufgabe 1 ==========================");
 
   //ToDo: füge ab hier Deinen Code ein
-
-  console.debug(pizza)
+const pizza = {
+  title: "Pizza",
+  belag: ["Käse, tunfisch, Paprika, Champignon"],
+  skala:  10,
+  gerneIsst: true,
 }
+  console.debug(pizza)
+
+}
+
 
 /**
  * 2) Rufe keys, value und entries auf.
@@ -22,13 +29,13 @@ function aufgabe2() {
   let ghibli = {
     name: "Studio Ghibli",
     gruendung: 1985,
-    medium: "Anime"
+    medium: "Anime",
   }
 
   //ToDo: füge ab hier in den debugs Deinen Code ein
-  console.debug()
-  console.debug()
-  console.debug()
+  console.debug(Object.keys(ghibli))
+  console.debug(Object.values(ghibli))
+  console.debug(Object.entries(ghibli))
 }
 
 /**
@@ -38,7 +45,15 @@ function aufgabe3() {
   console.debug("Aufgabe 3 ==========================");
 
   //ToDo: füge ab hier Deinen Code ein
-
+  const kuenstler = {
+    vorname: "Denezel",
+    nachname: "Washington",
+    geboren: "28. December, 1954",
+    gestorben: "Am Leben",
+    taetigkeit: "Schauspieler",
+    lieblingsWerk: "The Book of Eli",
+    quote: "Goals on the road to achievement cannot be achieved without discipline and consistency"
+  }
   for (let key of Object.keys(kuenstler)) {
     console.debug(key + ": " + kuenstler[key])
   }
