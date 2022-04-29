@@ -11,11 +11,12 @@ function aufgabe1() {
   //ToDo: füge ab hier Deinen Code ein
 const pizza = {
   title: "Pizza",
-  belag: ["Käse, tunfisch, Paprika, Champignon"],
+  belag: ["Käse", "Tunfisch", "Paprika", "Champignon"],
   skala:  10,
   gerneIsst: true,
 }
   console.debug(pizza)
+  console.debug(pizza.belag[1])
 
 }
 
@@ -57,6 +58,7 @@ function aufgabe3() {
   for (let key of Object.keys(kuenstler)) {
     console.debug(key + ": " + kuenstler[key])
   }
+  console.debug(kuenstler)
 }
 
 /**
