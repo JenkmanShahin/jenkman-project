@@ -1,4 +1,6 @@
 
+// noinspection JSAnnotator
+
 /**
  * Lektion 4: Bedingungen
  */
@@ -7,6 +9,12 @@
  * 1) 1) Erstelle eine if-Anweisung, die abfragt, ob ein bestimmter Artikel bereits gekauft wurde */
 function artikel_Gekauft() {
     //ToDo: füge ab hier deinen Code ein
+    let artikelName = "streukäse"
+    let artikel_Gekauft = true
+    if (artikel_Gekauft == true) {
+        console.debug("[Artikel]", artikelName, "wurde gekauft")
+    }
+
 
 }
 
@@ -17,7 +25,11 @@ function artikel_Gekauft() {
  */
 function artikel_Hinzufuegen() {
     //ToDo: füge ab hier deinen Code ein
-
+   let gruppenName = "Getreide"
+   let artikelName = "Quinoa"
+   if (artikelName != "") {
+       console.debug([gruppenName], artikelName, "hinzugefügt")
+   }
 }
 
 /**
@@ -26,15 +38,39 @@ function artikel_Hinzufuegen() {
  */
 function gruppe_Hinzufuegen() {
     // ToDo: füge ab hier deinen Code ein
-
+   let gleicheGruppe = []
+    let neueGruppe = "Getränke"
+    if (gleicheGruppe == 0) {
+        console.debug("[App]", "Gruppe", neueGruppe, "hinzugefügt")
+    }
+    else {
+        console.debug("[App]", neueGruppe, "existiert schon")
+    }
 }
 
 /**
  * 4) Überprüfe mit Hilfe einer switch-case-Anweisung, ob ein bestimmter Artikel in dem Array `einkaufsliste` vorkommt
  */
 function einkaufsliste_Vorhanden() {
-    // ToDo: füge ab hier deinen Code ein
-
+  // ToDo: füge ab hier deinen Code ein
+  let milchProdukte = ["Milch", "Joghurt", "Sahne"]
+  let artikel = "Eisbergsalat"
+  switch (artikel) {
+    case 1:
+      "Milch"
+      console.debug(artikel, "ist ein Milchprodukt")
+      break
+    case 2:
+      "Joghurt"
+      console.debug(artikel, "ist ein Milchprodukt")
+      break
+    case 3:
+      "Sahne"
+      console.debug(artikel, "ist ein Milchprodukt")
+      break
+    default:
+      console.debug("artikel \""+ artikel+"\" ist KEIN Milchprodukt")
+  }
 }
 
 /**
