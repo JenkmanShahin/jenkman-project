@@ -61,6 +61,7 @@ function aufgabe4() {
 
 }
 
+
 /**
  * 5) Schreibe deine while Schleife.
  */
