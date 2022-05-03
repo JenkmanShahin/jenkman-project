@@ -75,7 +75,6 @@ function aufgabe5() {
     i++
   }
   while (i<6)
-
 }
 
 /**
