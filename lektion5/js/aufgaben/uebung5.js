@@ -77,6 +77,7 @@ function aufgabe5() {
   while (i<6)
 }
 
+
 /**
  * 6) Schreibe deine do while Schleife
  */
