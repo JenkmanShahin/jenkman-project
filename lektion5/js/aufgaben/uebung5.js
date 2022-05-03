@@ -47,7 +47,6 @@ function aufgabe3() {
 /**
  * 4) Schreibe deine verschachtelte for Schleife.
  */
-
 function aufgabe4() {
   console.debug("Aufgabe 4 ==========================")
 
@@ -61,6 +60,7 @@ function aufgabe4() {
   }
 
 }
+
 
 /**
  * 5) Schreibe deine while Schleife.
