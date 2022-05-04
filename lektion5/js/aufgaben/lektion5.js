@@ -7,7 +7,11 @@
  */
 function artikelAuflisten() {
     // ToDo: füge ab hier deinen Code ein
+let artikelAuflisten= ["Brokkoli", "Reis", "Streukäse"]
+    for (const artikel of artikelAuflisten) {
+        console.debug(artikel)
 
+    }
 }
 
 /**
@@ -16,8 +20,16 @@ function artikelAuflisten() {
  */
 function allesAuflisten() {
     let gruppenListe = []
+    let gemueseListe= ["Brokkoli", "Zwiebeln", "Salat"]
+    let getreideListe= ["Reis", "Nudeln", "Quinoa"]
+    let milchListe= ["Streukäse", "Sahne", "Joghurt"]
 
-// ToDo: füge ab hier deinen Code ein
+    gruppenListe.push(gemueseListe, getreideListe,  milchListe)
+
+    for (let i = 0; i <= 2; i++) {
+        console.debug("Gruppe", i + ":", gruppenListe[i])
+    }
+
 }
 
 /**
@@ -25,7 +37,17 @@ function allesAuflisten() {
  * auf der Konsole aus
  */
 function artikelEntfernen() {
-    // ToDo: füge ab hier deinen Code ein
+    let gemueseListe = ["Brokkoli", "Zwiebeln", "Salat"]
+    let gruppenListe = []
+
+    gruppenListe.push(gemueseListe)
+
+        console.debug("gemueseGruppe vorher:", gemueseListe)
+    for (let i = 0; i <= 2; i++) {
+    gemueseListe.splice(0, 1)
+    }
+        return (console.debug("gemueseGruppe nachher:", gemueseListe))
+
 
 }
 
@@ -33,9 +55,22 @@ function artikelEntfernen() {
  * 4) Schreibe die Sortieren-Funktion
  */
 function sortieren() {
-    // ToDo: füge ab hier deinen Code ein
-}
+    let gruppenListe = []
+    let gemueseListe= ["Brokkoli", "Zwiebeln", "Salat"]
+    let getreideListe= ["Reis", "Nudeln", "Quinoa"]
+    let milchListe= ["Streukäse", "Sahne", "Joghurt"]
+    gruppenListe.push(gemueseListe, getreideListe, milchListe)
 
+    console.debug("GruppenListe vorher",gruppenListe)
+
+    for (const gruppenListenElement of gruppenListe) {
+
+        gruppenListenElement.sort();
+
+    }
+    gruppenListe.sort();
+    console.debug("gruppenListe nachher", gruppenListe)
+}
 export {
     artikelAuflisten, allesAuflisten, artikelEntfernen, sortieren
 }
