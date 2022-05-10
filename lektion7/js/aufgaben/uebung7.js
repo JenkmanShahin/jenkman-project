@@ -73,7 +73,9 @@ function aufgabe4() {
 
   class Motorrad {
     //ToDo: füge ab hier deinen Code ein
-
+  constructor(baujahr) {
+    this.baujahr =baujahr
+  }
     hupen() {
       console.debug("honk honk")
     }
