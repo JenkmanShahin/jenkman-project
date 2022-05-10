@@ -16,7 +16,7 @@ function aufgabe1() {
   }
 
   //ToDo: füge ab hier deinen Code ein
-
+  let apfel = new Apfel("rot")
   console.debug(apfel.farbe)
 }
 
@@ -32,6 +32,9 @@ function aufgabe2() {
     }
 
     //ToDo: füge ab hier deinen Code ein
+    hupen() {
+      console.debug("honk honk")
+    }
   }
 
   let bmw = new Auto("rot")
@@ -58,6 +61,8 @@ function aufgabe3() {
   let mini = new Pkw("blau")
 
   //ToDo: füge ab hier deinen Code ein
+  console.debug(mini.farbe)
+  mini.hupen()
 }
 
 /**
