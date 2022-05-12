@@ -14,19 +14,20 @@ class Filmliste {
 
   filmHinzufuegen(film) {
     this.liste.push(film)
-    console.debug(film.titel, "wurde hinzugefügt")
   }
 
 
   filmeHinzufuegen(filme) {
-    for (let film of filme){
-      this.liste.push(film)
+    for (let i of filme){
+      this.liste.push(i)
+
+      console.debug(i.titel, "wurde hinzugefügt")
 
     }
 
-    //for (let i= 0; i < filme.length; i++) {
-      //this.liste.push(filme[i])
-    //}
+    for (let i= 0; i< filme.length; i++) {
+      this.liste.push(filme[i])
+    }
   }
 
   sortieren() {
