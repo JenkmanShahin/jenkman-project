@@ -22,19 +22,37 @@ class Gruppe {
   }
 
   /**
+   * was soll diese Funktion machen?
    * Sucht einen Artikel anhand seines Namens
+   *
+   * Welche Parameter werden benutzt :
    * @param {String} suchName - Name des gesuchten Artikels
    * @param {Boolean} meldungAusgeben - steuert, ob eine Meldung ausgegeben wird
    * @returns {Artikel|null}
    */
   artikelFinden(suchName, meldungAusgeben) {
     // TODO: füge hier Deinen Code ein
+    for (let  artikel of this. artikelListe) {
+
+      if (artikel.name ==  suchName) {
+        return artikel
+      }
+
+    }
+    if (meldungAusgeben){
+    console.warn("artikel nicht gefunden", suchName)
+
+    }
+    return null
 
   }
 
   /**
    * Listet die Artikel in dieser Gruppe in der Konsole auf
    * @param {Boolean} gekauft - steuert die Anzeige der gekauften oder noch zu kaufenden Artikel
+   * String: "das hier ist ein String"
+   * boolean: true ODER false
+   *
    */
   artikelAuflisten(gekauft) {
     // TODO: füge hier Deinen Code ein
@@ -48,7 +66,7 @@ class Gruppe {
    */
   artikelHinzufuegen(name) {
     // TODO: doppelte Artikel abfangen!
-    let neuerArtikel = new Artikel(name)
+    let neuerArtikel = new Artikel(name, this.artikelListe.length)
     this.artikelListe.push(neuerArtikel)
     return neuerArtikel
   }
@@ -64,3 +82,18 @@ class Gruppe {
   }
 
 }
+
+
+function main() {
+
+  let zahl = 0
+  let gruppe = new Gruppe("produktGruppe1", 0)
+  gruppe.artikelHinzufuegen("artikel")
+  gruppe.artikelHinzufuegen("artikel2")
+  console.debug(gruppe.artikelListe)
+  gruppe.artikelFinden("artikel")
+  gruppe.artikelFinden("xxx", true)
+
+}
+
+main()

@@ -70,7 +70,7 @@ function gruppeEntfernen(gruppenName) {
 
         console.debug("Gruppe", gruppenName, "wurde entfernt")
     } else {
-        console.debug("Gruppe", gruppenName, "konnte NICHT entfernt werden")
+        console.warn("Gruppe", gruppenName, "konnte NICHT entfernt werden")
     }
 
 }

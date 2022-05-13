@@ -62,7 +62,6 @@ function sortieren() {
     gruppenListe.push(gemueseListe, getreideListe, milchListe)
 
     console.debug("GruppenListe vorher",gruppenListe)
-
     for (const gruppenListenElement of gruppenListe) {
 
         gruppenListenElement.sort();
