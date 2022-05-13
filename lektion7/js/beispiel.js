@@ -56,3 +56,10 @@ let Film4 = new Film("Iron Man", 126, 12, "Action", 2008, "false")
 let siFiListe = new Filmliste("Science-Fiction")
 let siFiArray = [Film1, Film2]
 siFiListe.filmeHinzufuegen(siFiArray)
+
+
+
+let action = new FileListe("Action")
+let actionArray = [Film3, Film4]
+action.filmHinzufuegen(actionArray)
+
