@@ -21,7 +21,7 @@ meldungenAusgaben = true
   // gruppeFinden
   let vorhandeneGruppe = this.gruppeFinden(name)
   if (vorhandeneGruppe == null) {
-    let neueGruppe = new gruppe(name, this.gruppenListe.length)
+    let neueGruppe = new Gruppe(name, this.gruppenListe.length)
     this.gruppenListe.push(neueGruppe)
     this.informieren("[App] Gruppe \"" + name + "\" angelegt")
     return neueGruppe
