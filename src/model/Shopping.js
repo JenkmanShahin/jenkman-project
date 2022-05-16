@@ -1,4 +1,4 @@
-import Gruppe from './Gruppe.js'
+import {Gruppe} from './Gruppe.js'
 
 class Shopping {
   gruppenListe = []

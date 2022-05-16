@@ -1,6 +1,3 @@
-
-
-
 /**
  * Klasse zum Beschreiben eines Artikels
  *

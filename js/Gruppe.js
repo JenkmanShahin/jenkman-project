@@ -1,4 +1,5 @@
-import {Artikel} from "./Artikel.js";
+import Gruppe from "./Gruppe.js";
+
 
 
 /**
@@ -34,9 +35,9 @@ class Gruppe {
         return artikel
       }
     }
-    //if (meldungAusgeben) {
-      // App.informieren(`[${this.name}] Artikel "${suchName}" nicht gefunden`, true)
-    //}
+    if (meldungAusgeben) {
+      App.informieren(`[${this.name}] Artikel "${suchName}" nicht gefunden`, true)
+    }
     return null
   }
 
@@ -50,9 +51,9 @@ class Gruppe {
         console.debug(`${artikel.name}`)
       }
     }
-    // if (meldungAusgeben) {
-    //   App.informieren(`[${this.name}] Artikel "${suchName}" nicht gefunden`, true)
-    // }
+    if (meldungAusgeben) {
+    App.informieren(`[${this.name}] Artikel "${suchName}" nicht gefunden`, true)
+    }
     return null
   }
 
@@ -69,13 +70,13 @@ class Gruppe {
       // App.informieren(`[${this.name}] Artikel "${name}" hinzugefügt`)
       return neuerArtikel
     } else {
-      // App.informieren(`[${this.name}] Artikel "${name}" existiert schon!`, true)
+      App.informieren(`[${this.name}] Artikel "${name}" existiert schon!`, true)
     }
   }
 
   /**
-   *
-   * @param {String} name
+   * Entfernt einen Artikel aus der ArtikelListe
+   * @param {String} name - Index s
    */
   artikelEntfernen(name) {
     // TODO: Artikel finden, position ermitteln
