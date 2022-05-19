@@ -54,7 +54,7 @@ class ShoppingList extends React.Component {
                   <span className="material-icons">sort</span> Sortieren
                 </button>
                 <button>
-                  <span className="material-icons">settings</span> Einstellungen
+                  <span className="material-icons">settings</span> setup
                 </button>
               </nav>
             </footer>
