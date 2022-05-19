@@ -28,6 +28,7 @@ class ShoppingList extends React.Component {
               </h2>
               <dl>
                 <GruppenTag/>
+
               </dl>
             </section>
             <hr/>
